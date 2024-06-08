@@ -1,0 +1,9 @@
+# IDE
+.idea
+
+# NODE MODULES
+node_modules
+
+# NEXT
+
+.next
