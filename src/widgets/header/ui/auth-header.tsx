@@ -1,13 +1,8 @@
 import Image from "next/image";
 
-import { Button } from "@/shared/ui";
-import { INavigation } from "@/shared/types";
+import { LogoutButton } from "@/features/auth";
 
-interface Props {
-  navigations: INavigation[];
-}
-
-export const AuthHeader = ({ navigations }: Props) => {
+export const AuthHeader = () => {
   return (
     <header className="flex justify-between items-center px-14 py-4 border-b-2">
       <div className="flex items-center gap-4">
@@ -17,11 +12,7 @@ export const AuthHeader = ({ navigations }: Props) => {
       <nav>
         <ul className="flex gap-6">
           <li>
-            <Button
-              type="button"
-              text="Logout"
-              onClick={() => console.log("Not implemented!")}
-            />
+            <LogoutButton />
           </li>
         </ul>
       </nav>
