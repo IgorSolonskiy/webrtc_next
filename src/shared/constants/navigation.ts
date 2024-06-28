@@ -1,13 +1,11 @@
-import { randomUUID } from "crypto";
-
 export const meetNavigation = [
   {
-    id: randomUUID(),
+    id: crypto.randomUUID(),
     text: "Sign in",
     href: "/sign-in",
   },
   {
-    id: randomUUID(),
+    id: crypto.randomUUID(),
     text: "Sign up",
     href: "/sign-up",
   },
@@ -15,12 +13,12 @@ export const meetNavigation = [
 
 export const signUpNavigation = [
   {
-    id: randomUUID(),
+    id: crypto.randomUUID(),
     text: "Meet",
     href: "/meet",
   },
   {
-    id: randomUUID(),
+    id: crypto.randomUUID(),
     text: "Sign in",
     href: "/sign-in",
   },
@@ -28,12 +26,12 @@ export const signUpNavigation = [
 
 export const signInNavigation = [
   {
-    id: randomUUID(),
+    id: crypto.randomUUID(),
     text: "Meet",
     href: "/meet",
   },
   {
-    id: randomUUID(),
+    id: crypto.randomUUID(),
     text: "Sign up",
     href: "/sign-up",
   },

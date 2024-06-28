@@ -4,6 +4,8 @@ import { Roboto } from "next/font/google";
 
 import "@/app/globals.css";
 
+import Providers from "@/app/providers";
+
 const inter = Roboto({ weight: ["400", "700"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} h-dvh flex flex-col`}>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
