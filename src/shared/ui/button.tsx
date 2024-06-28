@@ -1,37 +1,13 @@
-import Link from "next/link";
+import {ButtonHTMLAttributes} from "react";
 
-type ButtonProps = {
-    variant: "button";
+interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
     text: string;
-    classes?: string
-};
+    classes?: string;
+}
 
-type LinkProps = {
-    variant: "link";
-    text: string;
-    href: string;
-    classes?: string
-};
-
-type Props = ButtonProps | LinkProps;
-
-export const Button = ({variant, href, text, classes = ''}: Props) => {
-    if (variant === "link") {
-        return (
-            <Link
-                className={classes}
-                href={href}
-            >
-                {text}
-            </Link>
-        );
-    }
-
+export const Button = ({text, classes = '', ...props}: Props) => {
     return (
-        <button
-            className={classes}
-            type="submit"
-        >
+        <button className={classes} {...props}>
             {text}
         </button>
     );

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Header } from "@/widgets/header";
+import { BasicHeader } from "@/widgets/header";
 import { signUpNavigation } from "@/shared/constants";
 
 export default function SignUpLayout({
@@ -10,7 +10,7 @@ export default function SignUpLayout({
 }) {
   return (
     <>
-      <Header navigations={signUpNavigation} />
+      <BasicHeader navigations={signUpNavigation} />
       <main className="flex flex-1 items-center justify-center">
         {children}
       </main>

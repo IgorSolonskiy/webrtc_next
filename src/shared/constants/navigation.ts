@@ -1,6 +1,6 @@
 import { randomUUID } from "crypto";
 
-export const homeNavigation = [
+export const meetNavigation = [
   {
     id: randomUUID(),
     text: "Sign in",
@@ -16,8 +16,8 @@ export const homeNavigation = [
 export const signUpNavigation = [
   {
     id: randomUUID(),
-    text: "Home",
-    href: "/",
+    text: "Meet",
+    href: "/meet",
   },
   {
     id: randomUUID(),
@@ -29,8 +29,8 @@ export const signUpNavigation = [
 export const signInNavigation = [
   {
     id: randomUUID(),
-    text: "Home",
-    href: "/",
+    text: "Meet",
+    href: "/meet",
   },
   {
     id: randomUUID(),

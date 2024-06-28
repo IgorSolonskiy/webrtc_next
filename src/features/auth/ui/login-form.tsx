@@ -10,6 +10,6 @@ export const LoginForm = () => {
             <Label htmlFor="password" text="Password"/>
             <TextField id="password"/>
         </div>
-        <Button classes="mt-3" variant="button" text="Sign in"/>
+        <Button classes="mt-3" type="button" text="Sign in"/>
     </form>
 }

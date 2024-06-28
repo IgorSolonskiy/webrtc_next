@@ -14,6 +14,6 @@ export const RegisterForm = () => {
             <Label htmlFor="password" text="Password"/>
             <TextField id="password"/>
         </div>
-        <Button classes="mt-3" variant="button" text="Sign up"/>
+        <Button classes="mt-3" type="button" text="Sign up"/>
     </form>
 }
