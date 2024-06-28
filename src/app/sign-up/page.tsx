@@ -1,5 +1,5 @@
-import {RegisterForm} from "@/features/auth";
+import { RegisterForm } from "@/features/auth";
 
 export default function SignUp() {
-    return <RegisterForm/>;
+  return <RegisterForm />;
 }
