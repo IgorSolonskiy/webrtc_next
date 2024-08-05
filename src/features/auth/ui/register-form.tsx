@@ -4,23 +4,22 @@ import { useForm } from "react-hook-form";
 
 import { Button, Label, TextField } from "@/shared/ui";
 
-interface FormValues {
+type FormValues = {
   email: string;
   password: string;
   username: string;
-}
+};
 
-interface IProps {
+type Props = {
   onRegister: (values: FormValues) => void;
-}
+};
 
-export const RegisterForm = ({ onRegister }: IProps) => {
+export const RegisterForm = ({ onRegister }: Props) => {
   const { register, handleSubmit } = useForm<FormValues>();
-  const onSubmit = handleSubmit(onRegister);
 
   return (
     <form
-      onSubmit={onSubmit}
+      onSubmit={handleSubmit(onRegister)}
       className="flex flex-col gap-2 shadow-2xl p-12 rounded-lg"
     >
       <div>
