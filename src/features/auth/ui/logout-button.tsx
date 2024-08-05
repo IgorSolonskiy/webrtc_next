@@ -1,8 +1,9 @@
 "use client";
 
-import { Button } from "@/shared/ui";
-import { useLogoutUser } from "@/features/auth";
 import { useRouter } from "next/navigation";
+
+import { useLogoutUser } from "@/features/auth";
+import { Button } from "@/shared/ui";
 
 export const LogoutButton = () => {
   const router = useRouter();

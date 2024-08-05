@@ -3,5 +3,4 @@ export { RegisterForm } from "./ui/register-form";
 export { LogoutButton } from "./ui/logout-button";
 export { useLoginUser } from "./api/use-login-user";
 export { useLogoutUser } from "./api/use-logout-user";
-export { loginUser } from "./api/login-user";
-export { fetchRefreshToken } from "./api/refresh-token";
+export { useRegisterUser } from "./api/use-register-user";

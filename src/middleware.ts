@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 import { getProfile } from "@/entities/user";
-import { fetchRefreshToken } from "@/features/auth";
+import { fetchRefreshToken } from "@/shared/route-handlers";
 import { clearResponseTokens, getAuthTokens } from "@/shared/helpers";
 import { cookieOptions } from "@/shared/constants";
 

@@ -1,5 +1,5 @@
+import { loginUser } from "@/shared/route-handlers";
 import { setTokens } from "@/shared/helpers";
-import { loginUser } from "@/features/auth";
 
 export async function POST(request: Request) {
   const body = await request.json();
