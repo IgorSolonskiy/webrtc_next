@@ -32,7 +32,7 @@ export const RegisterForm = ({ onRegister }: Props) => {
       </div>
       <div>
         <Label htmlFor="password" text="Password" />
-        <TextField type="password" id="password" {...register("password")} />
+        <TextField id="password" type="password" {...register("password")} />
       </div>
       <Button classes="mt-3" type="submit" text="Sign up" />
     </form>

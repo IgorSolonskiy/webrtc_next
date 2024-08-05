@@ -23,11 +23,11 @@ export const LoginForm = ({ onLogin }: Props) => {
     >
       <div>
         <Label htmlFor="email" text="Email" />
-        <TextField type="text" {...register("email")} />
+        <TextField id="email" {...register("email")} />
       </div>
       <div>
         <Label htmlFor="password" text="Password" />
-        <TextField type="password" {...register("password")} />
+        <TextField id="password" type="password" {...register("password")} />
       </div>
       <Button classes="mt-3" type="submit" text="Sign in" />
     </form>

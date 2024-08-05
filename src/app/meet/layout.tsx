@@ -11,7 +11,7 @@ export default function MeetLayout({
   return (
     <>
       <BasicHeader navigations={meetNavigation} />
-      <main className="flex flex-1 items-center justify-center">
+      <main className="flex flex-1 justify-center items-center gap-20">
         {children}
       </main>
     </>

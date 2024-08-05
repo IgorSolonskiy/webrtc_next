@@ -4,19 +4,19 @@ import { HeroBlock, JoinMeeting } from "@/widgets/meet";
 
 export default function Meet() {
   return (
-    <section className="grid grid-cols-2 gap-4 max-w-7xl">
-      <div className="flex flex-col items-start">
+    <>
+      <section className="flex flex-col items-start max-w-xl">
         <HeroBlock />
         <JoinMeeting />
-      </div>
-      <div className="flex items-center justify-end">
+      </section>
+      <section className="flex items-center justify-end max-w-lg">
         <Image
           width={600}
           height={600}
           src="/meeting.svg"
           alt="Meet your friends"
         />
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
