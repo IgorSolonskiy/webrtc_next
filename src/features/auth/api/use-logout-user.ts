@@ -1,15 +1,14 @@
 import { useMutation } from "@tanstack/react-query";
 import { UseMutationOptions } from "@tanstack/react-query/src/types";
 
-export const useLoginUser = (props: UseMutationOptions) =>
+export const useLogoutUser = (props: UseMutationOptions) =>
   useMutation({
     mutationFn: (values) =>
-      fetch("/api/login", {
+      fetch("/api/logout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(values),
       }),
     ...props,
   });

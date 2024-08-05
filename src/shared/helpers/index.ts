@@ -1,1 +1,6 @@
-export { getAuthTokens, clearResponseTokens, setTokens } from "./cookies";
+export {
+  getAuthTokens,
+  clearResponseTokens,
+  setTokens,
+  clearTokens,
+} from "./cookies";

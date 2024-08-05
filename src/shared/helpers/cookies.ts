@@ -13,6 +13,12 @@ export const setTokens = (authCookies: { [key: string]: string }): void => {
   );
 };
 
+export const clearTokens = (names: string[]): void => {
+  const cookieStore = cookies();
+
+  names.forEach((name) => cookieStore.delete(name));
+};
+
 export const getAuthTokens = (names: string[]): (string | null)[] => {
   return names.map((name) => cookies().get(name)?.value || null);
 };
