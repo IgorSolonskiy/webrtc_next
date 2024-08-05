@@ -1,11 +1,14 @@
 import Image from "next/image";
 
-import { HeroBlock } from "@/widgets/meet";
+import { HeroBlock, JoinMeeting } from "@/widgets/meet";
 
 export default function Meet() {
   return (
     <section className="grid grid-cols-2 gap-4 max-w-7xl">
-      <HeroBlock />
+      <div className="flex flex-col items-start">
+        <HeroBlock />
+        <JoinMeeting />
+      </div>
       <div className="flex items-center justify-end">
         <Image
           width={600}

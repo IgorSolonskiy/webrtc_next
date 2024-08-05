@@ -1,2 +1,1 @@
-export { JoinMeeting } from "./ui/join-meeting";
-export { NewMeeting } from "./ui/new-meeting";
+export { JoinMeetingForm } from "./ui/join-meeting-form";
