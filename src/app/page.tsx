@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import { HeroBlock } from "@/widgets/home";
-import { AuthHeader } from "@/widgets/header/ui/auth-header";
+import { AuthHeader } from "@/widgets/header";
 
 export default function Home() {
   return (

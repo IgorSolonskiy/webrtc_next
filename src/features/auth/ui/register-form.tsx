@@ -1,24 +1,22 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-import { toast } from "react-toastify";
 import { useForm } from "react-hook-form";
 
-import { useRegisterUser } from "@/features/auth";
 import { Button, Label, TextField } from "@/shared/ui";
 
-export const RegisterForm = () => {
-  const router = useRouter();
+interface FormValues {
+  email: string;
+  password: string;
+  username: string;
+}
 
-  const onSuccess = (res: Response) => {
-    if (!res.ok) return toast.error("Something went wrong, try again later.");
+interface IProps {
+  onRegister: (values: FormValues) => void;
+}
 
-    router.push("/sign-in");
-  };
-
-  const mutation = useRegisterUser({ onSuccess });
-  const { register, handleSubmit } = useForm<FormData>();
-  const onSubmit = handleSubmit(mutation.mutate);
+export const RegisterForm = ({ onRegister }: IProps) => {
+  const { register, handleSubmit } = useForm<FormValues>();
+  const onSubmit = handleSubmit(onRegister);
 
   return (
     <form

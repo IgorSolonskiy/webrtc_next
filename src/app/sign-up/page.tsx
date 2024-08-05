@@ -1,5 +1,5 @@
-import { RegisterForm } from "@/features/auth";
+import { Register } from "@/widgets/auth/ui/register";
 
 export default function SignUp() {
-  return <RegisterForm />;
+  return <Register />;
 }

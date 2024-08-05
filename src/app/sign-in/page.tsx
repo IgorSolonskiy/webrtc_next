@@ -1,5 +1,5 @@
-import { LoginForm } from "@/features/auth";
+import { Login } from "@/widgets/auth";
 
 export default function SignIn() {
-  return <LoginForm />;
+  return <Login />;
 }

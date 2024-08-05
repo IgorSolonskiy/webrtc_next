@@ -1,29 +1,21 @@
 "use client";
 
-import { toast } from "react-toastify";
 import { useForm } from "react-hook-form";
-import { useRouter } from "next/navigation";
 
-import { useLoginUser } from "@/features/auth";
 import { Button, Label, TextField } from "@/shared/ui";
 
-type FormData = {
+interface FormValues {
   email: string;
-  password: string;
-};
+  username: string;
+}
 
-export const LoginForm = () => {
-  const router = useRouter();
+interface IProps {
+  onLogin: (values: FormValues) => void;
+}
 
-  const onSuccess = (res: Response) => {
-    if (!res.ok) return toast.error("Email or password is incorrect.");
-
-    router.push("/");
-  };
-
-  const mutation = useLoginUser({ onSuccess });
-  const { register, handleSubmit } = useForm<FormData>();
-  const onSubmit = handleSubmit(mutation.mutate);
+export const LoginForm = ({ onLogin }: IProps) => {
+  const { register, handleSubmit } = useForm<FormValues>();
+  const onSubmit = handleSubmit(onLogin);
 
   return (
     <form

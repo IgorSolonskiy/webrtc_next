@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { LogoutButton } from "@/features/auth";
+import { Logout } from "@/widgets/auth";
 
 export const AuthHeader = () => {
   return (
@@ -12,7 +12,7 @@ export const AuthHeader = () => {
       <nav>
         <ul className="flex gap-6">
           <li>
-            <LogoutButton />
+            <Logout />
           </li>
         </ul>
       </nav>
